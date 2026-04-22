@@ -1,1 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abubakar | IT Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #111;
+            border-bottom: 2px solid #00ff88;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #ffffff;
+            letter-spacing: 2px;
+        }
+
+        header h1 span {
+            color: #00ff88;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #aaaaaa;
+            margin-top: 10px;
+        }
+
+        nav {
+            background-color: #111;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #222;
+        }
+
+        nav a {
+            color: #00ff88;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            color: #00ff88;
+            border-bottom: 1px solid #222;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .about p {
+            font-size: 1rem;
+            color: #cccccc;
+            margin-bottom: 15px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-card {
+            background-color: #111;
+            border: 1px solid #222;
+            border-left: 3px solid #00ff88;
+            padding: 15px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #cccccc;
+        }
+
+        .project-card {
+            background-color: #111;
+            border: 1px solid #222;
+            border-left: 3px solid #00ff88;
+            padding: 25px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .project-card h3 {
+            color: #ffffff;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            color: #aaaaaa;
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .tag {
+            background-color: #1a1a1a;
+            border: 1px solid #00ff88;
+            color: #00ff88;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        .experience-card {
+            background-color: #111;
+            border: 1px solid #222;
+            border-left: 3px solid #00ff88;
+            padding: 25px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .experience-card h3 {
+            color: #ffffff;
+            font-size: 1.1rem;
+        }
+
+        .experience-card .meta {
+            color: #00ff88;
+            font-size: 0.85rem;
+            margin: 5px 0 10px 0;
+        }
+
+        .experience-card ul {
+            color: #aaaaaa;
+            font-size: 0.95rem;
+            padding-left: 20px;
+        }
+
+        .experience-card ul li {
+            margin-bottom: 6px;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-links a {
+            color: #00ff88;
+            text-decoration: none;
+            border: 1px solid #00ff88;
+            padding: 10px 25px;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            transition: all 0.2s;
+        }
+
+        .contact-links a:hover {
+            background-color: #00ff88;
+            color: #000000;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #444;
+            font-size: 0.85rem;
+            border-top: 1px solid #222;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Abubakar <span>IP</span></h1>
+        <p>Aspiring IT Professional — Networking | Cybersecurity | Linux</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I'm an 18-year-old based in Dublin, Ireland, currently completing my Leaving Certificate while actively pursuing a career in IT. My core interests are cybersecurity and network engineering — two fields I've been building knowledge in through self-directed projects and study.</p>
+        <p>I'm currently applying for a FIT ICT Apprenticeship and building hands-on experience through my own home lab, CTF challenges, and independent study of networking concepts and security fundamentals.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">Linux (Ubuntu Server)</div>
+            <div class="skill-card">Windows 10/11</div>
+            <div class="skill-card">Networking & DNS</div>
+            <div class="skill-card">CLI & Bash</div>
+            <div class="skill-card">Python (Basic)</div>
+            <div class="skill-card">HTML & CSS</div>
+            <div class="skill-card">Virtual Machines</div>
+            <div class="skill-card">Docker (Learning)</div>
+            <div class="skill-card">MariaDB & XAMPP</div>
+            <div class="skill-card">Git & GitHub</div>
+            <div class="skill-card">Pi-hole</div>
+            <div class="skill-card">CTF Challenges</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <h3>🖥️ Home Lab Server</h3>
+            <p>Repurposed a Dell Latitude 5410 as a dedicated Linux home server running Ubuntu Server 24.04 LTS. Manually configured static IP via Netplan, deployed Pi-hole for network-wide DNS ad blocking, and planning further deployment of Jellyfin and WireGuard VPN using Docker.</p>
+            <div class="tags">
+                <span class="tag">Ubuntu Server</span>
+                <span class="tag">Linux</span>
+                <span class="tag">DNS</span>
+                <span class="tag">Networking</span>
+                <span class="tag">Pi-hole</span>
+                <span class="tag">Docker</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>🔒 CTF Challenges</h3>
+            <p>Completed multiple CTF challenges on HackThisSite and OverTheWire Bandit, developing practical skills in Linux command line, basic exploitation techniques, and security fundamentals.</p>
+            <div class="tags">
+                <span class="tag">Cybersecurity</span>
+                <span class="tag">CTF</span>
+                <span class="tag">Linux CLI</span>
+                <span class="tag">HackThisSite</span>
+                <span class="tag">OverTheWire</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>🌐 Portfolio Website</h3>
+            <p>Built and deployed this portfolio site using HTML and CSS, hosted on GitHub Pages. First project using Git version control and GitHub for deployment.</p>
+            <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">GitHub Pages</span>
+                <span class="tag">Git</span>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+
+        <div class="experience-card">
+            <h3>IT Work Experience</h3>
+            <div class="meta">Hindsa Technologies, Dublin — TY (2 Weeks)</div>
+            <ul>
+                <li>Deployed Windows and Ubuntu across multiple devices in a professional IT environment</li>
+                <li>Configured and managed a MariaDB database and locally hosted a WordPress site using XAMPP</li>
+                <li>Gained hands-on experience with CLI, OS imaging, and enterprise IT workflows</li>
+            </ul>
+        </div>
+
+        <div class="experience-card">
+            <h3>Volunteer Sales Assistant</h3>
+            <div class="meta">Charity & Community Events, Dublin — 2019 to Present</div>
+            <ul>
+                <li>4+ years of customer service experience at charity events across Dublin</li>
+                <li>Handled cash and card transactions, stall setup, and customer engagement</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-links">
+            <a href="mailto:your@email.com">📧 Email Me</a>
+            <a href="https://github.com/AbubakarIP">💻 GitHub</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Built by Abubakar — Dublin, Ireland</p>
+    </footer>
+
+</body>
+</html>
